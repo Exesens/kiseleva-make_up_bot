@@ -9,7 +9,7 @@ bot = telebot.TeleBot('7155829029:AAHUBiFDEmAWw-x3oRKXmWny3VK9SIUdVFA') #При�
 @bot.message_handler(commands=['start'])
 def start(message):
     markup = types.InlineKeyboardMarkup()
-    btn1 = types.InlineKeyboardButton('💅 Услуги и прайс', web_app=WebAppInfo(url='https://exesens.github.io/Kiseleva-Make-Up/'))
+    btn1 = types.InlineKeyboardButton('💅 Услуги и прайс', web_app=WebAppInfo(url='https://exesens.github.io/kiseleva-make-up_price/'))
     markup.row(btn1)
     btn2 = types.InlineKeyboardButton('📆 Записаться', web_app=WebAppInfo(url='https://exesens.github.io/kiseleva_make_up_calendar/'))
     btn3 = types.InlineKeyboardButton('📝 Моя запись', callback_data='calendar')
